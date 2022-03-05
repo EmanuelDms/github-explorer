@@ -11,6 +11,7 @@ module.exports = {
   },
   resolve: {
     // ? Por padrão webpack interpreta arquivos .js, mas não .jsx
+    // * Um ganho ao realizar essa configuração, é não necessitar colocar extensões .jsx e .js ao importar esses tipos de arquivos em outros arquivos utilizando 'import'
     extensions: [".js", ".jsx"],
   },
   // * configurações de como a aplicação vai se comportar ao importar cada um dos tipos de arquivos
