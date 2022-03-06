@@ -16,6 +16,9 @@ module.exports = {
     // * Um ganho ao realizar essa configuração, é não necessitar colocar extensões .jsx e .js ao importar esses tipos de arquivos em outros arquivos utilizando 'import'
     extensions: [".js", ".jsx"],
   },
+  devServer: {
+    static: path.resolve(__dirname, "public"),
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "public", "index.html"),
