@@ -2,6 +2,7 @@
 const path = require("path");
 
 module.exports = {
+  mode: "development",
   // * arquivo inicial da aplicação
   // ? __dirname: diretório onde se encontra o arquivo atual
   entry: path.resolve(__dirname, "src", "index.jsx"),
